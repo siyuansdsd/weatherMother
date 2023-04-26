@@ -1,16 +1,22 @@
 const api_key = '401d06340b9742dcb0d125152232304';
 var city_name = 'London';
+const kv = {};
 
-function search_weather_by_name(city_name_alt) {
+async function search_weather_by_name_async(city_name_alt) {
     city_name = city_name_alt;
-    fetch(`https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city_name}&aqi=no`)
-        .then((response) => response.json())
-        .then((data) => {
-            console.log(data);
-        })
-        .catch((error) => {
-            console.log(error);
-        })
+    const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city_name}&aqi=no`);
+    const data = await response.json();
+    console.log(data);
+    kv['city'] = data.location.name;
+    kv['country'] = data.location.country;
+    kv['temp'] = data.current.temp_c;
+    kv['icon'] = data.current.condition.icon;
 }
 
-search_weather_by_name('London');
+async function search(city_name_alt) {
+    await search_weather_by_name_async(city_name_alt);
+    document.getElementById('city').innerHTML = kv['city'];
+    document.getElementById('country').innerHTML = kv['country'];
+    document.getElementById('temp').innerHTML = kv['temp'];
+    document.getElementById('icon').src = kv['icon'];
+}
