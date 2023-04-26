@@ -8,22 +8,21 @@
     <meta name="description" content="Weather Mother">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div>
+    <div class="main_holder">
         <h1>Weather Mother</h1>
         <p>Enter a city name to get the weather</p>
         <form>
             <input type="text" name="city" id="city" placeholder="E.g. London, Tokyo">
-            <button>Get Weather</button>
+            <button onclick="getValue()">Get Weather</button>
         </form>
-        <div id="weather"></div>
-        <p id="city"></p>
-        <p id="country"></p>
-        <p id="temp"></p>
-        <p id="icon"></p>
+        <h1 id="weather"></h1>
+        <h1 id="city"></h1>
+        <h1 id="country"></h1>
+        <h1 id="temp"></h1>
+        <picture id="icon" style="width: auto;"></picture>
     </div>
 </body>
 
