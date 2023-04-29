@@ -1,0 +1,17 @@
+.main_holder {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#weather,
+#cityy,
+#country,
+#temp {
+    width: 80%;
+    height: 30px;
+    font-size: large;
+    background-color: aquamarine;
+    color: black;
+}

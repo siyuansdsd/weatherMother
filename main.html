@@ -6,8 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Weather Mother">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -15,15 +14,16 @@
         <h1>Weather Mother</h1>
         <p>Enter a city name to get the weather</p>
         <form>
-            <input type="text" name="city" id="city" placeholder="E.g. London, Tokyo">
-            <button onclick="getValue()">Get Weather</button>
+            <input type="text" name="city" id="city" placeholder="E.g. London, Tokyo" value="London">
+            <button onclick="aa()">Get Weather</button>
         </form>
-        <h1 id="weather"></h1>
-        <h1 id="city"></h1>
-        <h1 id="country"></h1>
-        <h1 id="temp"></h1>
-        <picture id="icon" style="width: auto;"></picture>
+        <div id="weather">1 </div>
+        <h1 id="cityy">2 </h1>
+        <h1 id="country">3 </h1>
+        <h1 id="temp">4 </h1>
+        <picture id="icon"></picture>
     </div>
 </body>
+<script src="script.js"></script>
 
 </html>
