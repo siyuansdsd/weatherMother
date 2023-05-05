@@ -14,15 +14,26 @@
         <h1>Weather Mother</h1>
         <p>Enter a city name to get the weather</p>
         <form>
-            <input type="text" name="city" id="city" placeholder="E.g. London, Tokyo" value="London">
-            <button onclick="aa()">Get Weather</button>
+            <input type="text" name="city" id="city" placeholder="E.g. London, Tokyo" value="">
+            <button id="getBtn">Get Weather</button>
         </form>
-        <div id="weather">1 </div>
-        <h1 id="cityy">2 </h1>
-        <h1 id="country">3 </h1>
-        <h1 id="temp">4 </h1>
-        <picture id="icon"></picture>
-    </div>
+        <div class="card">
+            <div class="line1">
+                <h1 id="cityy"></h1>
+                <h1 id="country"></h1>
+            </div>
+            <div class="line2">
+                <h1 id="weather"></h1>
+                <h1 id="temp"></h1>
+            </div>
+            <div class="line3">
+                <h1 id="localTime"></h1>
+                <h1 id="updateTime"></h1>
+            </div>
+            <h1 id="feelTemp"></h1>
+            <h1 id="UV"></h1>
+            <picture id="icon"></picture>
+        </div>
 </body>
 <script src="script.js"></script>
 

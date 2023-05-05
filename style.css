@@ -5,12 +5,19 @@
     padding: 0 15px;
 }
 
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
 #weather,
 #cityy,
 #country,
 #temp {
-    width: 80%;
-    height: 30px;
     font-size: large;
     background-color: aquamarine;
     color: black;
