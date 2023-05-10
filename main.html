@@ -11,30 +11,45 @@
 
 <body>
     <div class="main_holder">
-        <h1>Weather Mother</h1>
-        <p>Enter a city name to get the weather</p>
-        <form>
-            <input type="text" name="city" id="city" placeholder="E.g. London, Tokyo" value="">
-            <button id="getBtn">Get Weather</button>
-        </form>
-        <div class="card">
-            <div class="line1">
-                <h1 id="cityy"></h1>
-                <h1 id="country"></h1>
+        <h1 id="title">Weather Mother</h1>
+        <hr>
+        <div id="tBlock">
+            <p id="mention">Enter a city name to get the weather</p>
+            <form>
+                <input type="text" name="city" id="city" placeholder="E.g. London, Tokyo" value="">
+                <button id="getBtn">Get Weather</button>
+            </form>
+        </div>
+        <div id="card-container">
+            <div class="card" id="card-2nd">
+                <h1 id="time-container"></h1>
             </div>
-            <div class="line2">
-                <h1 id="weather"></h1>
-                <h1 id="temp"></h1>
+            <div class="card" id="card-1st">
+                <div class="line1">
+                    <h1 id="cityy" class="showingText"></h1>
+                    <h1 id="country" class="showingText"></h1>
+                </div>
+                <div class="line2">
+                    <h1 id="weather" class="showingText"></h1>
+                    <h1 id="temp" class="showingText"></h1>
+                </div>
+                <div id="UV-container">
+                    <h1 id="feelTemp" class="showingText"></h1>
+                    <h1 id="humidity" class="showingText"></h1>
+                    <h1 id="windSpeed" class="showingText"></h1>
+                    <h1 id="UV" class="showingText"></h1>
+                </div>
+                <picture id="icon"></picture>
+                <div class="line3">
+                    <h1 id="localTime" class="showingText"></h1>
+                    <h1 id="updateTime" class="showingText"></h1>
+                </div>
             </div>
-            <div class="line3">
-                <h1 id="localTime"></h1>
-                <h1 id="updateTime"></h1>
-            </div>
-            <h1 id="feelTemp"></h1>
-            <h1 id="UV"></h1>
-            <picture id="icon"></picture>
+            <div id="map"></div>
         </div>
 </body>
 <script src="script.js"></script>
+<!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAgJ-TSzscHC1VU2rc5vB_IXBd_gct4k4&callback=initMap"> -->
+</script>
 
 </html>

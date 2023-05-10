@@ -3,22 +3,149 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    text-align: left;
 }
 
-.box {
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 60%;
     flex-wrap: wrap;
+    background-color: rgb(11, 79, 79);
+    border-radius: 30px;
 }
 
-#weather,
-#cityy,
-#country,
-#temp {
+#card-1st {
+    margin-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-image: url('https://media4.giphy.com/media/Cn46Wi1Fvh11S/200w.webp?cid=ecf05e47hscj6177l89378ossvz75s6tn4pcv3oyzpag7deg&ep=v1_gifs_search&rid=200w.webp&ct=g');
+    background-size: cover;
+}
+
+.showingText:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+    color: rgb(173, 173, 148);
+}
+
+.line3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.showingText {
     font-size: large;
-    background-color: aquamarine;
-    color: black;
+    background-color: none;
+    color: white;
+}
+
+.line1,
+.line2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.line2 {
+    margin-bottom: 10%;
+}
+
+.line1 {
+    line-height: 1.3;
+}
+
+#cityy {
+    font-size: 4rem;
+    margin: 1px 0px;
+}
+
+#country {
+    font-size: 20%;
+    margin-top: 0px;
+}
+
+#weather {
+    font-size: 2rem;
+    margin-top: 7%;
+}
+
+#temp {
+    font-size: 3rem;
+    margin: 1px 0px;
+}
+
+#UV-container {
+    text-align: left;
+    margin-bottom: 5%;
+    font-size: 2rem;
+}
+
+#tBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 110%;
+    width: 100%;
+}
+
+#city {
+    width: 50%;
+}
+
+#getBtn {
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+}
+
+#title {
+    font-size: 3rem;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(151, 187, 219);
+    padding: 0px 0px;
+    border-color: rgb(151, 187, 219);
+}
+
+hr {
+    margin: 0px 0px;
+}
+
+#card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#card-2nd {
+    width: 70%;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
+
+#mention {
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
 }
